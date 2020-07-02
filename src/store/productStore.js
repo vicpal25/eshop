@@ -1,4 +1,4 @@
-import { productCollection } from 'utils/db';
+import { productCollection, categoryCollection } from 'utils/db';
 import got from "got";
 
 async function findById(id) {
@@ -15,13 +15,18 @@ async function findById(id) {
   return result;
 }
 
-async function findByCategory(category) {
-  return []
+async function getCategories() {
+  const result = await categoryCollection
+  .find()
+  .lean()
+  .exec();
+
+return result;
 }
 
-export default function productStore() {
+export default function productStore(id) {
   return {
     findById: id => findById(id),
-    findByCategory: category => findByCategory(category)
+    getCategories: id => getCategories(id)
   };
 }

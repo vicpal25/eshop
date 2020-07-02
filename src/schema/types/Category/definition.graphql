@@ -1,0 +1,5 @@
+type Category {
+    categoryId: ID
+    name: String
+    # products:[Product]!
+}

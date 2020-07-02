@@ -1,13 +1,14 @@
 import mongoose from "mongoose";
 import logger from "utils/logger";
 import definitions from "utils/error/definitions";
-import { productSchema } from "utils/schema";
+import { productSchema, categorySchema } from "utils/schema";
 
 const mongooseDelete = require("mongoose-delete");
 
 const {
   PRODUCT_DB,
   PRODUCT_COLLECTION,
+  CATEGORY_COLLECTION,
   MONGO_URI,
   MONGO_AUTHSOURCE
 } = process.env;
@@ -46,17 +47,34 @@ const handleReconnectFailed = () => {
   throw new Error("Product Mongreconnect failed!");
 };
 
+//Products
 const productsMongo = mongoose.createConnection(
   `${MONGO_URI}`,
   dbConnectionParms,
-  error => handleMongoConnect(error, "Product Articles Database")
+  error => handleMongoConnect(error, "Product Database")
 );
 
 productsMongo.on("reconnected", handleReconnnected);
 productsMongo.on("reconnectFailed", handleReconnectFailed);
 
+//Categories
+const categoryMongo = mongoose.createConnection(
+  `${MONGO_URI}`,
+  dbConnectionParms,
+  error => handleMongoConnect(error, "Category Database")
+  );
+
+categoryMongo.on("reconnected", handleReconnnected);
+categoryMongo.on("reconnectFailed", handleReconnectFailed);
+
 export const productCollection = productsMongo.model(
   "products",
   productSchema,
   PRODUCT_COLLECTION
+);
+
+export const categoryCollection = categoryMongo.model(
+  "categories",
+  categorySchema,
+  CATEGORY_COLLECTION
 );
