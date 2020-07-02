@@ -1,0 +1,4 @@
+node_modules
+src/schema/queries.js
+src/schema/types.js
+dist/
