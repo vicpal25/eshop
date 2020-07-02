@@ -4,7 +4,7 @@ Node/GraphQL Ecommerce Project
 
 ```
 query GetProducts {
-  		products {
+  	products {
         name
         sku
       }     
