@@ -1,2 +1,2 @@
 # eshop
-Node Ecommerce Project
+Node/GraphQL Ecommerce Project
