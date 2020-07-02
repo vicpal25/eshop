@@ -1,149 +1,149 @@
 export default {
-  'LITHIUM-404': {
-    name: 'LITHIUM-404',
+  'ECOMM-404': {
+    name: 'ECOMM-404',
     external: 'Not found',
     internal: 'Not found',
     status: 404,
   },
-  'LITHIUM-500': {
-    name: 'LITHIUM-500',
+  'ECOMM-500': {
+    name: 'ECOMM-500',
     external: 'Sorry something went wrong',
     internal: 'Internal server error, check previous logs with correlationId',
     status: 500,
   },
-  'LITHIUM-030': {
-    name: 'LITHIUM-030',
+  'ECOMM-030': {
+    name: 'ECOMM-030',
     external: 'Unable to find related articles.',
     internal: 'Failed retrieving articles',
     status: 404,
   },
-  'LITHIUM-029': {
-    name: 'LITHIUM-029',
+  'ECOMM-029': {
+    name: 'ECOMM-029',
     external: 'Could not find Article by slug',
     internal: 'Failed retrieving article',
     status: 404,
   },
-  'LITHIUM-028': {
-    name: 'LITHIUM-028',
+  'ECOMM-028': {
+    name: 'ECOMM-028',
     external: 'Cannot save a locked module',
     internal: 'User attempted to save a locked module',
     status: 400,
   },
-  'LITHIUM-027': {
-    name: 'LITHIUM-027',
+  'ECOMM-027': {
+    name: 'ECOMM-027',
     external: 'A failure occurred while fetching price range',
     internal: 'Failed retrieving priceRange',
     status: 500,
   },
-  'LITHIUM-026': {
-    name: 'LITHIUM-026',
+  'ECOMM-026': {
+    name: 'ECOMM-026',
     external: 'Cannot save a locked curation',
     internal: 'User attempted to save a locked curation',
     status: 400,
   },
-  'LITHIUM-025': {
-    name: 'LITHIUM-025',
+  'ECOMM-025': {
+    name: 'ECOMM-025',
     external: 'Module name already exists',
     internal: 'Error while creating a module with a given name',
     status: 400,
   },
-  'LITHIUM-024': {
-    name: 'LITHIUM-024',
+  'ECOMM-024': {
+    name: 'ECOMM-024',
     external: 'Sorry something went wrong',
     internal: 'Error while pulling the a module by id',
     status: 500,
   },
-  'LITHIUM-023': {
-    name: 'LITHIUM-023',
+  'ECOMM-023': {
+    name: 'ECOMM-023',
     external: 'A fail occured while loading modules',
     internal: 'Error while fetching the module list',
     status: 500,
   },
-  'LITHIUM-022': {
-    name: 'LITHIUM-022',
+  'ECOMM-022': {
+    name: 'ECOMM-022',
     external: 'A failure occurred while purging curations',
     internal: 'purgeCurations failed',
   },
-  'LITHIUM-021': {
-    name: 'LITHIUM-021',
+  'ECOMM-021': {
+    name: 'ECOMM-021',
     external: 'Failed to search for articles, try again',
     internal: 'searchArticles failed',
     status: 400,
   },
-  'LITHIUM-020': {
-    name: 'LITHIUM-020',
+  'ECOMM-020': {
+    name: 'ECOMM-020',
     external: 'Failed to scrape external link, try again',
     internal: 'Scraping an external link failed',
     status: 400,
   },
-  'LITHIUM-019': {
-    name: 'LITHIUM-019',
+  'ECOMM-019': {
+    name: 'ECOMM-019',
     external: 'Curation route was invalid',
     internal: 'Error while creating a curation with an invalid route',
     status: 400,
   },
-  'LITHIUM-018': {
-    name: 'LITHIUM-018',
+  'ECOMM-018': {
+    name: 'ECOMM-018',
     external: 'Sorry something went wrong',
     internal: 'Error while pulling a curation by route/brand',
     status: 500,
   },
-  'LITHIUM-017': {
-    name: 'LITHIUM-017',
+  'ECOMM-017': {
+    name: 'ECOMM-017',
     external: 'Sorry something went wrong',
     internal: 'Error while pulling the a curation by id',
     status: 500,
   },
-  'LITHIUM-016': {
-    name: 'LITHIUM-016',
+  'ECOMM-016': {
+    name: 'ECOMM-016',
     external: 'Sorry something went wrong',
     internal: 'Error while fetching the curations list',
     status: 500,
   },
-  'LITHIUM-015': {
-    name: 'LITHIUM-015',
+  'ECOMM-015': {
+    name: 'ECOMM-015',
     external: 'Sorry something went wrong',
     internal: 'Hot Read Article not found while pulling Article API',
     status: 500,
   },
-  'LITHIUM-014': {
-    name: 'LITHIUM-014',
+  'ECOMM-014': {
+    name: 'ECOMM-014',
     external: 'Sorry something went wrong',
     internal: 'Hot Reads not found while pulling API',
     status: 500,
   },
-  'LITHIUM-013': {
-    name: 'LITHIUM-013',
+  'ECOMM-013': {
+    name: 'ECOMM-013',
     external: 'Sorry something went wrong',
     internal: 'Filmstrip not found while pulling API',
     status: 500,
   },
-  'LITHIUM-012': {
-    name: 'LITHIUM-012',
+  'ECOMM-012': {
+    name: 'ECOMM-012',
     external: 'Sorry something went wrong',
     internal: 'River not found while pulling API',
     status: 500,
   },
-  'LITHIUM-011': {
-    name: 'LITHIUM-011',
+  'ECOMM-011': {
+    name: 'ECOMM-011',
     external: 'Not found',
     internal: 'Video not found while searching for video by id',
     status: 404,
   },
-  'LITHIUM-010': {
-    name: 'LITHIUM-010',
+  'ECOMM-010': {
+    name: 'ECOMM-010',
     external: 'Sorry something went wrong',
     internal: 'Error while finding video by id, check previous logs with correlationId',
     status: 500,
   },
-  'LITHIUM-009': {
-    name: 'LITHIUM-009',
+  'ECOMM-009': {
+    name: 'ECOMM-009',
     external: 'Not found',
     internal: 'Missing field required for article',
     status: 500,
   },
-  'LITHIUM-008': {
-    name: 'LITHIUM-008',
+  'ECOMM-008': {
+    name: 'ECOMM-008',
     external: 'Not found',
     internal: 'A video included with article was not found in video api.',
     status: 404,
@@ -152,46 +152,46 @@ export default {
     external: 'Something went wrong with grabbing data from that URL',
     status: 500,
   },
-  'LITHIUM-007': {
-    name: 'LITHIUM-007',
+  'ECOMM-007': {
+    name: 'ECOMM-007',
     external: 'Sorry something went wrong',
-    internal: 'Mongoose has failed reconnecting to celere mongo.',
+    internal: 'Mongoose has failed reconnecting to  mongo.',
     status: 500,
   },
-  'LITHIUM-006': {
-    name: 'LITHIUM-006',
+  'ECOMM-006': {
+    name: 'ECOMM-006',
     external: 'Sorry something went wrong',
-    internal: 'Mongoose has reconnected to celere mongo.',
+    internal: 'Mongoose has reconnected to  mongo.',
     status: 500,
   },
-  'LITHIUM-005': {
-    name: 'LITHIUM-005',
+  'ECOMM-005': {
+    name: 'ECOMM-005',
     external: 'Sorry something went wrong',
     internal: 'A call to get oembed data has failed, check previous logs with correlationId for more details',
     status: 500,
   },
-  'LITHIUM-004': {
-    name: 'LITHIUM-004',
+  'ECOMM-004': {
+    name: 'ECOMM-004',
     external: 'Sorry something went wrong',
-    internal: 'Celere mongo initial database connection has failed!',
+    internal: ' mongo initial database connection has failed!',
     status: 500,
   },
-  'LITHIUM-003': {
-    name: 'LITHIUM-003',
+  'ECOMM-003': {
+    name: 'ECOMM-003',
     external: 'Sorry something went wrong',
     internal:
       'A call getting related videos has failed, check previous logs with correlationId for more details',
     status: 500,
   },
-  'LITHIUM-002': {
-    name: 'LITHIUM-002',
+  'ECOMM-002': {
+    name: 'ECOMM-002',
     external: 'Sorry something went wrong',
     internal:
       'A call getting related articles has failed, check previous logs with correlationId for more details',
     status: 500,
   },
-  'LITHIUM-001': {
-    name: 'LITHIUM-001',
+  'ECOMM-001': {
+    name: 'ECOMM-001',
     external: 'Sorry something went wrong',
     internal: 'Call to mongo has failed, check previous logs with correlationId for more details',
     status: 500,

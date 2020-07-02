@@ -1,4 +1,4 @@
-// import { productCollection } from 'utils/db';
+import { productCollection } from 'utils/db';
 import got from "got";
 
 async function findById(id) {
@@ -7,41 +7,16 @@ async function findById(id) {
     return null;
   }
 
-  const result = [
-    {
-      id: 343,
-      name: "A cool widget"
-    },
-    {
-      id: 23423,
-      name: "Cool Coffee cup"
-    }
-  ];
+  const result = await productCollection
+    .find()
+    .lean()
+    .exec();
 
   return result;
 }
 
 async function findByCategory(category) {
-  const modelRegex = new RegExp(`^${processDashes(vehicleModel)}$`, "i");
-  const makeRegex = new RegExp(`^${processDashes(vehicleMake)}$`, "i");
-
-  const query = {
-    "vehicleTags.make": makeRegex,
-    "vehicleTags.model": modelRegex,
-    "vehicleTags.year": vehicleYear,
-    type: "capsule"
-  };
-
-  const result = await lithiumArticleCollection
-    .findOne(query, projection)
-    .lean()
-    .exec();
-
-  if (!result) {
-    return null;
-  }
-
-  return result;
+  return []
 }
 
 export default function productStore() {

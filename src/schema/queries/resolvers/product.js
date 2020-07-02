@@ -4,8 +4,12 @@ export default {
       const { id } = args;
       const { Store, errors } = context;
       let products;
-      
+
       products = await Store.Product.findById(id);
+
+      if (!products) {
+        return [];
+      }
 
       return products;
     }
