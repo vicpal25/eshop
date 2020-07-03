@@ -1,8 +1,6 @@
 # eshop
 Node/GraphQL Ecommerce Project
 
-
-
 ----
 ## products
 ```
@@ -23,5 +21,18 @@ query GetCategories {
       name
       categoryId
     }  
+}
+```
+
+----
+## Get a Category with Products
+```
+query GetCategoryWithProducts{
+  
+  availableProducts(categoryId:"1") {
+    name
+    sku
+  }
+  
 }
 ```
