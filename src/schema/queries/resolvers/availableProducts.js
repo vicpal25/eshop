@@ -5,10 +5,6 @@ export default {
       const { categoryId } = args;
       const { Store, errors } = context;
 
-      if (!categoryId) {
-        return [];
-      }
-
       const products = await Store.Product.getCategoryWithProducts(categoryId);
 
       if (!products) {

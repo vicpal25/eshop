@@ -9,8 +9,8 @@ export default logger => error => {
   }
 
   const { path } = error;
-  const { name, external, internal, status } = definition;
-  logger.error({ error: { name, message: internal, status } });
+  const { external, internal, status } = definition;
+  logger.error({ error: { message: internal, status } });
 
   return { message: external, status, path };
 };
